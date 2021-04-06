@@ -1,0 +1,13 @@
+USE ssr1g2
+GO
+
+IF OBJECT_ID('HighRiskLoc', 'U') IS NOT NULL
+DROP TABLE HighRiskLoc
+GO
+
+CREATE TABLE HighRiskLoc
+(
+    LocationId [VARCHAR](255) FOREIGN KEY REFERENCES [Location.ID](LocationId) PRIMARY KEY
+);
+GO
+SELECT * FROM HighRiskLoc

@@ -1,0 +1,18 @@
+USE ssr1g2
+GO
+
+IF OBJECT_ID('CheckInOut', 'U') IS NOT NULL
+DROP TABLE CheckInOut
+GO
+
+CREATE TABLE CheckInOut
+(
+    UserId [VARCHAR](255) FOREIGN KEY REFERENCES [User](UserID),
+    LocationId [VARCHAR](255) FOREIGN KEY REFERENCES [Location.ID](LocationId),
+    CheckIn [DATETIME] NOT NULL,
+    CheckOut [DATETIME] NOT NULL,
+    CONSTRAINT UserIn PRIMARY KEY (UserId, CheckIn)
+);
+GO
+
+SELECT * FROM CheckInOut
