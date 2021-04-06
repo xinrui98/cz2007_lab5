@@ -1,8 +1,3 @@
-USE ssr1g2
-GO
-
-DROP TABLE [Message]
-
 CREATE TABLE [Message] (
     MessageID VARCHAR(255) PRIMARY KEY,
     Timestamp DATETIME NOT NULL,

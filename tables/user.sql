@@ -1,10 +1,3 @@
-USE ssr1g2
-GO
-
-IF OBJECT_ID('User', 'U') IS NOT NULL
-DROP TABLE [User]
-GO
-
 -- Create the table in the specified schema
 CREATE TABLE [User]
 (

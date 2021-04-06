@@ -1,6 +1,3 @@
-USE ssr1g2
-GO
-
 CREATE TRIGGER protect_ratings ON Rating
 INSTEAD OF UPDATE
 AS

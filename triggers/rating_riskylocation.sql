@@ -1,9 +1,4 @@
--- When a place's average rating falls below threshold, place them into risky locations table/view
-USE ssr1g2
-GO
-
-DROP TRIGGER RiskyLocation
-GO
+-- When a place's average rating falls below threshold, place them into risky locations table
 
 CREATE TRIGGER RiskyLocation ON Rating
 AFTER INSERT

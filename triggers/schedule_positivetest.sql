@@ -1,9 +1,3 @@
-USE ssr1g2
-GO
-
-DROP TRIGGER PositiveTest
-GO
-
 CREATE TRIGGER PositiveTest ON Schedule
 AFTER INSERT, UPDATE
 AS

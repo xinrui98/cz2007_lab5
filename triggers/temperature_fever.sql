@@ -1,9 +1,3 @@
-USE ssr1g2
-GO
-
-DROP TRIGGER Fever
-GO
-
 CREATE TRIGGER Fever ON Temperature
 AFTER INSERT
 AS
@@ -14,7 +8,6 @@ BEGIN
     WHERE I.Temp > 37.5;
 END
 GO
-
 -- --Test: Insert user3 with temperature > 37.5. 
 -- --Result: UserId of user3 will appear in HighRisk
 

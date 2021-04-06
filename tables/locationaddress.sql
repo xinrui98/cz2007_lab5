@@ -1,9 +1,3 @@
-USE ssr1g2
-GO
-
-DROP TABLE [Location.Address]
-GO
-
 CREATE TABLE [Location.Address] (
     Address VARCHAR(255) PRIMARY KEY,
     X FLOAT NOT NULL,

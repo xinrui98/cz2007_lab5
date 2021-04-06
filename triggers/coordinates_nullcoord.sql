@@ -1,10 +1,4 @@
 -- When coordinates are updated with null, default to previous location
-USE ssr1g2
-GO
-
-DROP TRIGGER NullCoord
-GO
-
 CREATE TRIGGER NullCoord ON Coordinates
 AFTER INSERT
 AS

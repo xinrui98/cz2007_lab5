@@ -1,9 +1,3 @@
-USE ssr1g2
-GO
-
-DROP TABLE [Company]
-GO
-
 CREATE TABLE [Company] (
     CompanyID VARCHAR(255) PRIMARY KEY,
     MailingAddress VARCHAR(255),

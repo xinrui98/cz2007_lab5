@@ -1,10 +1,3 @@
-USE ssr1g2
-GO
-
-IF OBJECT_ID('Befamily', 'U') IS NOT NULL
-DROP TABLE Befamily
-GO
-
 CREATE TABLE Befamily
 (
     UserId1 [VARCHAR](255) FOREIGN KEY REFERENCES [User](UserId), 

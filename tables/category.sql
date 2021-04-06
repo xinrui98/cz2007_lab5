@@ -1,8 +1,3 @@
-USE ssr1g2
-GO
-
-DROP TABLE [Category]
-
 CREATE TABLE Category (
     name VARCHAR(255) PRIMARY KEY,
     containedBy VARCHAR(255),
@@ -55,17 +50,6 @@ BEGIN
     -- PRINT'ok2'
     RETURN;
 END
-GO
-
--- TODO Trigger to protect postby and messageid
-
-DELETE FROM [Category]
-GO
-
-INSERT INTO [Category]
-VALUES ('cat1', 'cat2'),
-    ('cat1.1', NULL),
-    ('cat2', 'cat1.1')
 GO
 
 SELECT * FROM [Category]

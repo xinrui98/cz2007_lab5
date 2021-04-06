@@ -1,9 +1,3 @@
-USE ssr1g2
-GO
-
-IF OBJECT_ID('Temperature', 'U') IS NOT NULL
-DROP TABLE [Temperature]
-GO
 -- Create the table in the specified schema
 CREATE TABLE [Temperature]
 (

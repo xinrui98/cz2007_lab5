@@ -1,13 +1,3 @@
-USE ssr1g2
-GO
-
-IF OBJECT_ID('Schedule', 'U') IS NOT NULL
-DROP TABLE [Schedule]
-GO
-
-DROP FUNCTION dbo.IsClinicLocation
-GO
-
 CREATE FUNCTION dbo.IsClinicLocation(@loc AS [VARCHAR](255))
 RETURNS INT
 AS BEGIN
