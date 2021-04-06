@@ -1,7 +1,3 @@
-SELECT * FROM Rating
-
-USE ssr1g2
-
 -- Insert rows into table 'TableName'
 INSERT INTO Rating
 ( -- columns to insert data into

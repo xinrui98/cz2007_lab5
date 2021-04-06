@@ -1,0 +1,2 @@
+-- Supposed to be blank since only added
+-- from rating_riskylocation trigger

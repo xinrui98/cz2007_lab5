@@ -1,5 +1,3 @@
-USE ssr1g2
-
 -- Insert rows into table 'TableName'
 INSERT INTO Category
 ( -- columns to insert data into
